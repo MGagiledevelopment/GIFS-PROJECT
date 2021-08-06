@@ -1,8 +1,10 @@
 .buttonHeader{
     width:15rem;
     height: 4rem;
+    color:rgb(95,20,216);
     border-radius: 5rem;
-    border-style: none;
+    border-color: rgb(95,20,216);
+    background-color:white ;
 }
 .buttonHeader:hover{
     background-color: rgb(136, 133, 133);
