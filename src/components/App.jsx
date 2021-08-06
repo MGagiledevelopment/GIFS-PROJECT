@@ -11,7 +11,7 @@ function App() {
   return (
     <div className={buttonHeader ? "AppDark" : "App" }>
       <Header button={buttonHeader} setButton={setButtonHeader}/>
-      <Navbar/>
+      <Navbar button={buttonHeader} setButton={setButtonHeader}/>
       <Gifts/>
     </div>
   );

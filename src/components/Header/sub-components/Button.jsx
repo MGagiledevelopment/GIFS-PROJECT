@@ -26,7 +26,7 @@ console.log(props.buttonHeader)
   return (
     <div>
       {props.buttonHeader ? (
-        <button onClick={()=>{setterDark()}} className={buttonHeaderStyle.buttonHeader}>
+        <button onClick={()=>{setterDark()}} className={buttonHeaderStyle.dark}>
           MODO LIGTH
         </button>
       ) : (
@@ -37,7 +37,14 @@ console.log(props.buttonHeader)
           MODO DARK
         </button>
       )}
+
+
       
+{/* <button onClick={()=>{props.setButtonHeader(!props.buttonHeader)}} className={ `${props.buttonHeader ? buttonHeaderStyle.dark : ""} buttonHeaderStyle.buttonHeader` }>
+{props.buttonHeader? "MODO LIGTH" : "MODO DARK"}
+
+</button> */}
+
     </div>
   );
 }

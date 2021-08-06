@@ -7,6 +7,14 @@
     background-color:white ;
 }
 .buttonHeader:hover{
-    background-color: rgb(136, 133, 133);
+font-size: 1.5rem;
+}
+
+.dark{
+    width:15rem;
+    height: 4rem;
     color:white;
+    border-radius: 5rem;
+    border-color: white;
+    background-color:transparent;
 }
