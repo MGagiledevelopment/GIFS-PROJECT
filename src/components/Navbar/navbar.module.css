@@ -3,3 +3,10 @@
     width: 80%;
     border:1px solid blue;
 }
+
+.sectionSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

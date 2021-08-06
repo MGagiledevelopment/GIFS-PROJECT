@@ -1,0 +1,19 @@
+.inputtext{
+    height: 5rem;
+    width:40rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    outline: none;
+    
+}
+
+.search{
+    height: 5rem;
+    width:7rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.search:hover{
+    background-color: rgb(193, 190, 190);
+}
