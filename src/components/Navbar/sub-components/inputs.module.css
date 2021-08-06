@@ -1,6 +1,6 @@
 .inputtext{
     height: 5rem;
-    width:40rem;
+    width:45rem;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     outline: none;
@@ -10,10 +10,13 @@
 .search{
     height: 5rem;
     width:7rem;
+    border-left: none;
+    border-style: none;
+    background-color:rgb(95,20,216) ;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
 
 .search:hover{
-    background-color: rgb(193, 190, 190);
+    background-color: rgba(95, 20, 216, 0.749)
 }

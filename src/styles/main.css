@@ -20,7 +20,7 @@ html {
 }
 
 .AppDark{
-    background-color: black;
+    background-color: rgb(56,55,55);
     padding-top: 3rem;
     display:flex;
     flex-direction: column;
