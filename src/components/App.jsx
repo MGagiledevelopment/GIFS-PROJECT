@@ -9,7 +9,7 @@ function App() {
  const [buttonHeader, setButtonHeader] = useState(false)
 
   return (
-    <div className={buttonHeader ? "AppDark" : "" }>
+    <div className={buttonHeader ? "AppDark" : "App" }>
       <Header button={buttonHeader} setButton={setButtonHeader}/>
       <Navbar/>
       <Gifts/>
