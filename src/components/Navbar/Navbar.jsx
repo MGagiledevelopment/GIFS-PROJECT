@@ -13,6 +13,8 @@ export default function Navbar(props) {
       >
         ¡Inpirate y busca los mejores <span>GIFS</span>!
       </h1>
+
+      
       <img src="./images/navbar.svg" className={navbarStyles.img}/>
       <div className={navbarStyles.sectionSearch}>
         <InputText button={props.button} setButton={props.setButton}/>
