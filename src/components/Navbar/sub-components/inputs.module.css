@@ -7,6 +7,10 @@
     
 }
 
+.dark.inputtext{
+    background-color:rgb(56,55,55) ;
+}
+
 .search{
     height: 6rem;
     width:9rem;

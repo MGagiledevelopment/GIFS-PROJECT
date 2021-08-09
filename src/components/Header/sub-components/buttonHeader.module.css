@@ -1,6 +1,6 @@
 .buttonHeader{
     width:15rem;
-    height: 4rem;
+    height: 5rem;
     color:rgb(95,20,216);
     border-radius: 5rem;
     border-color: rgb(95,20,216);
@@ -14,9 +14,9 @@ font-size: 1.3rem;
 background-color:rgb(80,227,194);
 }
 
-.dark{
+.dark.buttonHeader{
     width:15rem;
-    height: 4rem;
+    height: 5rem;
     color:white;
     border-radius: 5rem;
     border-color: white;

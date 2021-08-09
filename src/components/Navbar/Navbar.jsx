@@ -15,7 +15,7 @@ export default function Navbar(props) {
       </h1>
       <img src="./images/navbar.svg" className={navbarStyles.img}/>
       <div className={navbarStyles.sectionSearch}>
-        <InputText />
+        <InputText button={props.button} setButton={props.setButton}/>
         <SearchButton />
       </div>
     </div>
