@@ -1,6 +1,6 @@
 .inputtext{
-    height: 5rem;
-    width:45rem;
+    height: 6rem;
+    width:60rem;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     outline: none;
@@ -8,8 +8,8 @@
 }
 
 .search{
-    height: 5rem;
-    width:7rem;
+    height: 6rem;
+    width:9rem;
     border-left: none;
     border-style: none;
     background-color:rgb(95,20,216) ;
