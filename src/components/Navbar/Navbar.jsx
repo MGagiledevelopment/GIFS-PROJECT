@@ -18,7 +18,6 @@ export default function Navbar(props) {
         <InputText />
         <SearchButton />
       </div>
-      <h2 className={navbarStyles.subTitle}>Realizá tu búsqueda</h2>
     </div>
   );
 }
