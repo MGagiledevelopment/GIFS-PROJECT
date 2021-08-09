@@ -3,7 +3,6 @@ import navbarStyles from "../Navbar/navbar.module.css";
 import InputText from "./sub-components/input-text";
 import SearchButton from "./sub-components/search-button";
 
-// import"../Navbar/dark.css"
 export default function Navbar(props) {
 
 
@@ -12,7 +11,7 @@ export default function Navbar(props) {
 
 
 
-       <h1 className={`${props.button ? navbarStyles.dark : " " } navbarStyles.mainTitle `}>¡Inpirate y busca los mejores gifts!</h1>
+       <h1 className={`${props.button ? navbarStyles.dark : " " } ${navbarStyles.mainTitle} `}>¡Inpirate y busca los mejores gifts!</h1>
 
 
 
