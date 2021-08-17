@@ -1,17 +1,24 @@
-import React, {useState} from "react"
-import inputStyles from "../sub-components/inputs.module.css"
+import React from "react";
+import inputStyles from "../sub-components/inputs.module.css";
 
-export default function InputText (props){
-   
-    const[text, setText] = useState("Buscar GIF")
+export default function InputText(props) {
+  const setterClick = () => {
+    props.setInputText(" ");
+  };
 
-    const setterClick = ()=>{
-        setText(" ")
-    }
+  const setterText = (e) => {
+    props.setInputText(e.target.value);
+  };
 
-    const setterText = (e)=>{
-        setText(e.target.value)
-    }
-
-    return <input value={text} onChange={setterText} onClick={setterClick} className={`${props.button ? inputStyles.dark : " "} ${inputStyles.inputtext} `}type="text" />
+  return (
+    <input
+      value={props.inputText}
+      onChange={setterText}
+      onClick={setterClick}
+      className={`${props.button ? inputStyles.dark : " "} ${
+        inputStyles.inputtext
+      } `}
+      type="text"
+    />
+  );
 }

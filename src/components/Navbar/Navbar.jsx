@@ -7,7 +7,7 @@ export default function Navbar(props) {
   return (
     <div className={navbarStyles.navbar}>
       <h1
-        className={`${props.button ? navbarStyles.dark : " "} ${
+        className={`${props.buttonHeader ? navbarStyles.dark : " "} ${
           navbarStyles.mainTitle
         } `}
       >
@@ -17,8 +17,8 @@ export default function Navbar(props) {
       
       <img src="./images/navbar.svg" className={navbarStyles.img}/>
       <div className={navbarStyles.sectionSearch}>
-        <InputText button={props.button} setButton={props.setButton}/>
-        <SearchButton />
+        <InputText inputText={props.inputText} setInputText={props.setInputText}/>
+        <SearchButton searchButton={props.searchButton} setSearchButton={props.setSearchButton}/>
       </div>
     </div>
   );

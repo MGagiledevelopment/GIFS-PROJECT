@@ -1,9 +1,15 @@
 import React from "react"
 import inputStyles from "../sub-components/inputs.module.css"
 
-export default function SearchButton() {
+export default function SearchButton(props) {
+
+   const handleButton = () => {
+    props.setSearchButton(!props.searchButton)
+   }
+
+
     return (<>
     
-    <button className={inputStyles.search}><img src="./images/icon-search.svg"/></button>
+    <button onClick={handleButton} className={inputStyles.search}><img src="./images/icon-search.svg"/></button>
     </>)
 }
