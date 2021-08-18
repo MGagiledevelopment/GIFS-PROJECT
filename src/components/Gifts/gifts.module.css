@@ -12,11 +12,16 @@
 
 .boxGifts {
   width: 80%;
-  background-color: rgba(185, 184, 184, 0.568);
+  background-color: rgba(231,231,231);
+  border-radius: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem;
+}
+
+.dark.boxGifts{
+    background-color: black;
 }
 .gif {
   margin: 1rem;
@@ -43,7 +48,7 @@
   color: rgb(87, 26, 208);
 }
 
-.dark2.title2 {
+.dark.title2 {
   font-size: 2rem;
   color: white;
 }
