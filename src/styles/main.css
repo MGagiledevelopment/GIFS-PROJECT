@@ -16,7 +16,7 @@ html {
 
 
 .App{
-    width:100%;
+    min-height: 100vh;
     border:1px solid red;
     padding-top: 3rem;
     display:flex;
