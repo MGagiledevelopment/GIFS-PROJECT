@@ -1,7 +1,31 @@
 .gifts{
-    height: 50rem;
+    height: 100%;
     width: 80%;
     border:1px solid green;
-    color:rgb(95,20,216)
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2rem;
+}
 
+.boxGifts{
+    width: 80%;
+    background-color: rgba(185, 184, 184, 0.568);
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem;
+}
+.gif{
+    margin:1rem;
+}
+
+.title{
+    font-size: 2.9rem;
+}
+
+.dark.title{
+font-size: 1rem;
 }
