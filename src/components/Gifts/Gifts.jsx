@@ -5,8 +5,8 @@ export default function Gifts(props) {
   return (
     <div className={giftsStyles.gifts}>
       {props.array.length > 0
-        ? <p>Resultado de tu búsqueda</p>
-        : <p>Realizá tu búsqueda</p>}
+        ? <p className={`${props.buttonHeader ? giftsStyles.dark2 : " "} ${giftsStyles.title2}`}>Resultado de tu búsqueda</p>
+        : <p className={`${props.buttonHeader ? giftsStyles.dark : " "} ${giftsStyles.title}`}>Realizá tu búsqueda</p>}
 
       <div className={`${props.array.length > 0 ? giftsStyles.boxGifts : " " }`}>
         {props.array.length > 0 ? (

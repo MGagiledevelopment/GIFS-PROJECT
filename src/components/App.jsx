@@ -31,7 +31,7 @@ useEffect(()=>{
         inputText={inputText}
         setInputText={setInputText}
       />
-      <Gifts array={arrayGif} />
+      <Gifts array={arrayGif} buttonHeader={buttonHeader} setButtonHeader={setButtonHeader} />
     </div>
   );
 }
