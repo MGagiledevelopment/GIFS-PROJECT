@@ -1,32 +1,30 @@
-.inputtext{
-    height: 6rem;
-    width:60rem;
-    font-size: 2.1rem;
-    padding: 2rem;
-    color:rgba(128, 128, 128, 0.685);
-    border: 0.2rem solid rgb(95,20,216);
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    outline: none;
-
-    
+.inputtext {
+  height: 6rem;
+  width: 60rem;
+  font-size: 2.1rem;
+  padding: 2rem;
+  color: rgba(128, 128, 128, 0.685);
+  border: 0.2rem solid rgb(95, 20, 216);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  outline: none;
 }
 
-.dark.inputtext{
-    background-color:rgb(56,55,55) ;
-    border:0.1rem solid white;
+.dark.inputtext {
+  background-color: rgb(56, 55, 55);
+  border: 0.1rem solid white;
 }
 
-.search{
-    height: 6rem;
-    width:9rem;
-    border-left: none;
-    border-style: none;
-    background-color:rgb(95,20,216) ;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+.search {
+  height: 6rem;
+  width: 9rem;
+  border-left: none;
+  border-style: none;
+  background-color: rgb(95, 20, 216);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
-.search:hover{
-    background-color: rgba(95, 20, 216, 0.749)
+.search:hover {
+  background-color: rgba(95, 20, 216, 0.749);
 }

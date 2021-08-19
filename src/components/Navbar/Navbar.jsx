@@ -2,23 +2,46 @@ import React from "react";
 import navbarStyles from "../Navbar/navbar.module.css";
 import InputText from "./sub-components/input-text";
 import SearchButton from "./sub-components/search-button";
+import Autocomplete from "../Autocomplete/Autocomplete.jsx";
 
-export default function Navbar(props) {
+export default function Navbar({
+  buttonHeader,
+  searchButton,
+  setSearchButton,
+  inputText,
+  setInputText,
+  autocomplete,
+}) {
   return (
     <div className={navbarStyles.navbar}>
       <h1
-        className={`${props.buttonHeader ? navbarStyles.dark : " "} ${
+        className={`${buttonHeader ? navbarStyles.dark : " "} ${
           navbarStyles.mainTitle
         } `}
       >
         ¡Inpirate y busca los mejores <span>GIFS</span>!
       </h1>
 
-      
-      <img src="./images/navbar.svg" className={navbarStyles.img}/>
+      <img src="./images/navbar.svg" className={navbarStyles.img} />
       <div className={navbarStyles.sectionSearch}>
-        <InputText inputText={props.inputText} setInputText={props.setInputText} button={props.buttonHeader}/>
-        <SearchButton searchButton={props.searchButton} setSearchButton={props.setSearchButton}/>
+        <InputText
+          inputText={inputText}
+          setInputText={setInputText}
+          button={buttonHeader}
+        />
+        <SearchButton
+          searchButton={searchButton}
+          setSearchButton={setSearchButton}
+        />
+      </div>
+
+      <div>
+        {" "}
+        {autocomplete.length > 0 ? (
+          <Autocomplete autocomplete={autocomplete} />
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );

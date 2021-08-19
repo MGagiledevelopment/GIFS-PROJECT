@@ -12,3 +12,18 @@ export function data(button,setterButton, setterArray,input){
         })}
     
 }
+
+
+export function automaticData(text, setter) {
+    const petition = fetch(
+      `https://api.giphy.com/v1/gifs/search/tags?api_key=4lLsekJPTOO0S7IYawubPut9TBZW9Ka9&q=${text}&limit=5&offset=0&rating=g&lang=en`
+    );
+    petition
+      .then((inJSON) => {
+        return inJSON.json();
+      })
+      .then((data) => {
+        setter(data.data);
+      });
+  }
+  

@@ -1,16 +1,16 @@
 .navbar {
-  height: 45rem;
+  height: 100%;
   width: 80%;
+  padding: 4rem;
   border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.img{
-  width:45rem;
+.img {
+  width: 45rem;
 }
-
 
 .sectionSearch {
   display: flex;
@@ -19,18 +19,16 @@
 }
 
 .mainTitle {
-  color:rgb(95,20,216);
-  font-size:4rem;
+  color: rgb(95, 20, 216);
+  font-size: 4rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
-.mainTitle span{
+.mainTitle span {
   font-weight: 900;
 }
 
-.dark.mainTitle{
-  color:white;
-
+.dark.mainTitle {
+  color: white;
 }
-
