@@ -39,7 +39,7 @@ export default function Navbar({
       <div>
         {" "}
         {autocomplete.length > 0 ? (
-          <Autocomplete autocomplete={autocomplete} searchButton={searchButton}setSearchButton={setSearchButton}/>
+          <Autocomplete autocomplete={autocomplete} setInputText={setInputText}searchButton={searchButton}setSearchButton={setSearchButton}/>
         ) : (
           <></>
         )}
