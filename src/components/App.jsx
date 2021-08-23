@@ -21,8 +21,6 @@ function App() {
     automaticData(inputText, setAutocomplete);
   }, [inputText]);
 
-  console.log(autocomplete);
-
   return (
     <div className={buttonHeader ? "AppDark" : "App"}>
       <Header buttonHeader={buttonHeader} setButtonHeader={setButtonHeader} />

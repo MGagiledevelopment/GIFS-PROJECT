@@ -1,7 +1,8 @@
 
 export function data(button,setterButton, setterArray,input){
+const key = '4lLsekJPTOO0S7IYawubPut9TBZW9Ka9'
     if (button) {
-        const petition = fetch(`https://api.giphy.com/v1/gifs/search?api_key=4lLsekJPTOO0S7IYawubPut9TBZW9Ka9&q=${input}&limit=25&offset=0&rating=g&lang=en`)
+        const petition = fetch(`https://api.giphy.com/v1/gifs/search?api_key=${key}&q=${input}&limit=15&offset=0&rating=g&lang=en`)
        
         petition.then((inJSON)=>{
         return inJSON.json()
@@ -15,8 +16,9 @@ export function data(button,setterButton, setterArray,input){
 
 
 export function automaticData(text, setter) {
+  const key = '4lLsekJPTOO0S7IYawubPut9TBZW9Ka9'
     const petition = fetch(
-      `https://api.giphy.com/v1/gifs/search/tags?api_key=4lLsekJPTOO0S7IYawubPut9TBZW9Ka9&q=${text}&limit=5&offset=0&rating=g&lang=en`
+      `https://api.giphy.com/v1/gifs/search/tags?api_key=${key}&q=${text}&limit=5&offset=0&rating=g&lang=en`
     );
     petition
       .then((inJSON) => {
@@ -26,4 +28,4 @@ export function automaticData(text, setter) {
         setter(data.data);
       });
   }
-  
+

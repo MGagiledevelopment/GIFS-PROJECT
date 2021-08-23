@@ -3,6 +3,8 @@ import inputStyles from "../sub-components/inputs.module.css"
 
 export default function SearchButton(props) {
 
+
+    
    const handleButton = () => {
     props.setSearchButton(!props.searchButton)
    }
