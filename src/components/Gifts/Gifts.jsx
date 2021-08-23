@@ -31,10 +31,10 @@ export default function Gifts(props) {
           {props.array.length > 0 ? (
             props.array.map((gif) => {
               return (
-                <img
+                <a href="https://giphy.com"><img
                   src={gif.images.fixed_width.url}
                   className={`${props.buttonHeader ? giftsStyles.dark : "" } ${giftsStyles.gif}`}
-                />
+                /> </a>
               );
             })
           ) : (
