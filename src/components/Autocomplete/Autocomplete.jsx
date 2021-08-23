@@ -1,6 +1,7 @@
 import React from "react";
 import autocompleteStyles from "../Autocomplete/autocomplete.module.css";
 
+
 export default function Autocomplete({
   autocomplete,
   searchButton,
@@ -22,12 +23,14 @@ export default function Autocomplete({
 
   return (
     <div className={autocompleteStyles.mainbox}>
+      {searchButton ? <div className={autocompleteStyles.ldsring}><div></div><div></div><div></div><div></div></div> : <></>}
+
       {autocomplete.map((data) => {
         return (
           <div>
-            <li onClick={setter} className={autocompleteStyles.list}>
+             <li onClick={setter} className={autocompleteStyles.list}>
               {data.name}
-            </li>
+            </li> 
           </div>
         );
       })}

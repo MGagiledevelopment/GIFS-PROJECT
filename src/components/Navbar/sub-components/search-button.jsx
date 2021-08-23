@@ -1,9 +1,12 @@
 import React from "react";
 import inputStyles from "../sub-components/inputs.module.css";
+import ClipLoader from "react-spinners/ClipLoader";
 
-export default function SearchButton(props) {
+export default function SearchButton({searchButton, setSearchButton}) {
+
   const handleButton = () => {
-    props.setSearchButton(!props.searchButton);
+    setSearchButton(!searchButton);
+    
   };
 
   return (

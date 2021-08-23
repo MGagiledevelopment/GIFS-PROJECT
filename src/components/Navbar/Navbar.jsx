@@ -4,6 +4,7 @@ import InputText from "./sub-components/input-text";
 import SearchButton from "./sub-components/search-button";
 import Autocomplete from "../Autocomplete/Autocomplete.jsx";
 
+
 export default function Navbar({
   buttonHeader,
   searchButton,

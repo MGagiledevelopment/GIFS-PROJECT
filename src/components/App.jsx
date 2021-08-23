@@ -13,12 +13,17 @@ function App() {
   const [arrayGif, setArrayGif] = useState([]);
   const [autocomplete, setAutocomplete] = useState([]);
 
+
+
   useEffect(() => {
-    data(searchButton, setSearchButton, setArrayGif, inputText);
+    setTimeout(()=>{
+      data(searchButton, setSearchButton, setArrayGif, inputText);
+    }, 2000)
+    
   }, [searchButton]);
 
   useEffect(() => {
-    automaticData(inputText, setAutocomplete);
+      automaticData(inputText, setAutocomplete);
   }, [inputText]);
 
   return (

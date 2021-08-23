@@ -34,7 +34,7 @@ export default function Gifts(props) {
                 <a href="https://giphy.com"><img
                   src={gif.images.fixed_width.url}
                   className={`${props.buttonHeader ? giftsStyles.dark : "" } ${giftsStyles.gif}`}
-                /> </a>
+                /> </a> 
               );
             })
           ) : (
