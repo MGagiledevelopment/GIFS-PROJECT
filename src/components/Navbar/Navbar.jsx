@@ -33,6 +33,7 @@ export default function Navbar({
         <SearchButton
           searchButton={searchButton}
           setSearchButton={setSearchButton}
+          setInputText={setInputText}
         />
       </div>
 
