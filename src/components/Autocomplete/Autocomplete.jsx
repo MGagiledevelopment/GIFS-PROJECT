@@ -39,7 +39,8 @@ export default function Autocomplete({
 
       {autocomplete.map((data) => {
         return (
-          <div>
+          <div className={autocompleteStyles.listItem}>
+            <i class="fas fa-search"></i>
             <li onClick={setter} className={autocompleteStyles.list}>
               {data.name}
             </li>

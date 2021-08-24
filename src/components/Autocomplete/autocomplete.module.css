@@ -18,12 +18,20 @@
   border-radius: 2rem;
 }
 
-.list:hover {
-  background-color: rgba(110, 57, 196, 0.13);
+.listItem{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2rem;
 }
 
-
-
+.listItem :nth-child(1){
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.listItem:hover {
+  background-color: rgba(110, 57, 196, 0.13);
+}
 
 /* spinner */
 
