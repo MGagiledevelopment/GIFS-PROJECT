@@ -7,7 +7,7 @@ export default function SearchButton({searchButton, setSearchButton,setInputText
   const handleButton = () => {
       setSearchButton(!searchButton);
       setTimeout(()=>{
-        setInputText("Buscar GIF")
+        setInputText("")
       }, 2000)
   };
 

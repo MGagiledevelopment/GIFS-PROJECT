@@ -19,6 +19,7 @@ export default function InputText(props) {
         inputStyles.inputtext
       } `}
       type="text"
+      placeholder="Buscar GIF"
     />
   );
 }

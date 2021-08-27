@@ -20,7 +20,7 @@ export default function Autocomplete({
   const setter = () => {
     setSearchButton(!searchButton);
     setTimeout(()=>{
-    setInputText("Buscar GIF")
+      setInputText("")
     }, 2000)
   };
 

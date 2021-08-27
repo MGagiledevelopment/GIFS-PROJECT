@@ -9,17 +9,16 @@ import { automaticData } from "../utils/utils";
 function App() {
   const [buttonHeader, setButtonHeader] = useState(false);
   const [searchButton, setSearchButton] = useState(false);
-  const [inputText, setInputText] = useState(" Buscar GIF");
+  const [inputText, setInputText] = useState("");
   const [arrayGif, setArrayGif] = useState([]);
   const [autocomplete, setAutocomplete] = useState([]);
 
-
+console.log(autocomplete)
 
   useEffect(() => {
     setTimeout(()=>{
       data(searchButton, setSearchButton, setArrayGif, inputText);
     }, 2000)
-    
   }, [searchButton]);
 
   useEffect(() => {
