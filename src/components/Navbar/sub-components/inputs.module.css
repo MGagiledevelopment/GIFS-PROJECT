@@ -10,6 +10,8 @@
   outline: none;
 }
 
+
+
 .dark.inputtext {
   background-color: rgb(56, 55, 55);
   border: 0.1rem solid white;
@@ -27,4 +29,17 @@
 
 .search:hover {
   background-color: rgba(95, 20, 216, 0.749);
+}
+
+@media screen and (max-width: 420px){
+  .inputtext{
+    border:1px solid red;
+    width: 23rem;
+    height: 2rem;
+  }
+
+  .search{
+    width: 7rem;
+    height: 4.3rem;
+  }
 }

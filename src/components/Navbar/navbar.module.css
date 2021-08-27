@@ -11,6 +11,12 @@
 .img {
   width: 45rem;
 }
+@media screen and (max-width: 420px){
+  .img{
+    border:1px solid red;
+    width: 30rem;
+  }
+}
 
 .sectionSearch {
   display: flex;
