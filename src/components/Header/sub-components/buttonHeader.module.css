@@ -22,3 +22,9 @@ background-color:rgb(80,227,194);
     border-color: white;
     background-color:transparent;
 }
+
+@media screen and (max-width: 600px){
+    .buttonHeader{
+      width: 11rem;
+    }
+  }
