@@ -9,7 +9,11 @@
   border-radius: 2rem;
   background-color: white;
 }
-
+.dark.mainbox{
+  background-color:rgb(56,55,55) ;
+  color:white;
+  border:1px solid white;
+}
 .list {
   list-style: none;
   width: 100%;
@@ -17,7 +21,6 @@
   padding: 1.2rem;
   border-radius: 2rem;
 }
-
 .listItem{
   display:flex;
   align-items: center;
@@ -33,6 +36,14 @@
   background-color: rgba(110, 57, 196, 0.13);
 }
 
+@media screen and (max-width: 600px){
+  .mainbox{
+    width: 60%;
+  }
+  .list{
+    font-size: 1.5rem;
+  }
+}
 /* spinner */
 
 .ldsring {

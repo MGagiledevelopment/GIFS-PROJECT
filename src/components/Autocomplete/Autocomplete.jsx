@@ -5,7 +5,8 @@ export default function Autocomplete({
   autocomplete,
   searchButton,
   setSearchButton,
-  setInputText
+  setInputText,
+  buttonHeader
 }) {
   // const idOption = document.querySelector("autoOption");
   // console.log(idOption)
@@ -25,7 +26,7 @@ export default function Autocomplete({
   };
 
   return (
-    <div className={autocompleteStyles.mainbox}>
+    <div className={`${buttonHeader ? autocompleteStyles.dark : ""} ${autocompleteStyles.mainbox}`}>
       {searchButton ? (
         <div className={autocompleteStyles.ldsring}>
           <div></div>
