@@ -69,3 +69,13 @@ a {
   font-size: 2rem;
   color: white;
 }
+
+
+@media screen and (max-width: 600px){
+  .title{
+    font-size: 2rem;
+  }
+  .dark.title{
+    font-size: 2rem;
+  }
+}

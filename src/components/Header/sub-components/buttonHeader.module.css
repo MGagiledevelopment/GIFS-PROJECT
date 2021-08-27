@@ -26,5 +26,10 @@ background-color:rgb(80,227,194);
 @media screen and (max-width: 600px){
     .buttonHeader{
       width: 11rem;
+      font-size: 1rem;
+      margin-left: 1.4rem;
+    }
+    .dark.buttonHeader{
+      width:11rem;
     }
   }
