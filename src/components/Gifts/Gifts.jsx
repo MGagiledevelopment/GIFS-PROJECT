@@ -1,5 +1,6 @@
 import React from "react";
 import giftsStyles from "../Gifts/gifts.module.css";
+import Notfound from "../Notfound/Notfound";
 
 export default function Gifts(props) {
   return (
@@ -13,6 +14,7 @@ export default function Gifts(props) {
           Resultado de tu búsqueda
         </p>
       ) : (
+        <>
         <p
           className={`${props.buttonHeader ? giftsStyles.dark : " "} ${
             giftsStyles.title
@@ -20,6 +22,25 @@ export default function Gifts(props) {
         >
           Realizá tu búsqueda
         </p>
+        <p>TOP 15</p>
+        </>
+      )}
+
+      {props.array.length === 0 ? ( 
+        props.trending.map((gif) => {
+          return (
+            <a href="https://giphy.com">
+              <img
+                src={gif.images.fixed_width.url}
+                className={`${props.buttonHeader ? giftsStyles.dark : ""} ${
+                  giftsStyles.gif
+                }`}
+              />{" "}
+            </a>
+          );
+        })
+      ) : (
+        <></>
       )}
 
       {props.array.length > 0 ? (
@@ -48,6 +69,7 @@ export default function Gifts(props) {
       ) : (
         <></>
       )}
+      {props.autocomplete === 0 ? <Notfound /> : <></>}
     </div>
   );
 }

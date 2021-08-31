@@ -36,7 +36,7 @@
   background-color: rgba(110, 57, 196, 0.13);
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
   .mainbox{
     width: 60%;
   }
@@ -83,4 +83,3 @@
     transform: rotate(360deg);
   }
 }
-

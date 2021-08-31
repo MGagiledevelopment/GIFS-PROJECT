@@ -20,7 +20,7 @@ export default function Navbar({
           navbarStyles.mainTitle
         } `}
       >
-        ¡Inpirate y busca los mejores <span>GIFS</span>!
+        ¡Inspirate y buscá los mejores <span>GIFS</span>!
       </h1>
 
       <img src="./images/navbar.svg" className={navbarStyles.img} />
@@ -34,6 +34,7 @@ export default function Navbar({
           searchButton={searchButton}
           setSearchButton={setSearchButton}
           setInputText={setInputText}
+          autocomplete={autocomplete}
         />
       </div>
 

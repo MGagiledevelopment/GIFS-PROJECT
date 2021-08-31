@@ -13,7 +13,7 @@ export default function Button(props) {
           buttonHeaderStyle.buttonHeader
         }`}
       >
-        {props.buttonHeader ? "MODO LIGTH" : "MODO DARK"}
+        {props.buttonHeader ? "MODO LIGHT" : "MODO DARK"}
       </button>
     </div>
   );

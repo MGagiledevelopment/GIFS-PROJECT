@@ -6,8 +6,10 @@ export default function Autocomplete({
   searchButton,
   setSearchButton,
   setInputText,
-  buttonHeader
+  buttonHeader,
 }) {
+
+  
   // const idOption = document.querySelector("autoOption");
   // console.log(idOption)
 
@@ -18,15 +20,20 @@ export default function Autocomplete({
   //   })
   // }
 
+ 
   const setter = () => {
     setSearchButton(!searchButton);
-    setTimeout(()=>{
-      setInputText("")
-    }, 2000)
+    setTimeout(() => {
+      setInputText("");
+    }, 2000);
   };
 
   return (
-    <div className={`${buttonHeader ? autocompleteStyles.dark : ""} ${autocompleteStyles.mainbox}`}>
+    <div
+      className={`${buttonHeader ? autocompleteStyles.dark : ""} ${
+        autocompleteStyles.mainbox
+      }`}
+    >
       {searchButton ? (
         <div className={autocompleteStyles.ldsring}>
           <div></div>
@@ -42,7 +49,7 @@ export default function Autocomplete({
         return (
           <div className={autocompleteStyles.listItem}>
             <i class="fas fa-search"></i>
-            <li onClick={setter} className={autocompleteStyles.list}>
+            <li onClick={setter} id="prueba" className={autocompleteStyles.list}>
               {data.name}
             </li>
           </div>
