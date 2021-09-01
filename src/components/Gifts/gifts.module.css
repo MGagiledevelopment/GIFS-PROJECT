@@ -78,3 +78,24 @@ a {
     font-size: 2rem;
   }
 }
+
+
+.trendingtitle{
+  color:rgb(87, 26, 208);
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  padding:1rem;
+  font-size:2rem;
+  font-weight: 400;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 1px 0px 30px 0px rgba(87, 26, 208, 0.294);
+  -moz-box-shadow: 1px 0px 30px 0px rgba(87, 26, 208, 0.431);
+  box-shadow: 1px 0px 30px 0px rgba(87, 26, 208, 0.438);
+}
+
+.dark.trendingtitle{
+  background-color: white;
+  -webkit-box-shadow: 1px 0px 30px 0px rgba(255, 255, 255, 0.418);
+  -moz-box-shadow: 1px 0px 30px 0px rgba(255, 255, 255, 0.418);
+  box-shadow: 1px 0px 30px 0px rgba(255, 255, 255, 0.418);
+}
