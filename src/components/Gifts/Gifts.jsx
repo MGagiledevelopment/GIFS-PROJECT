@@ -5,6 +5,7 @@ import Circle from "../Loader/Loader";
 import Trending from "../Trending/Trending";
 
 export default function Gifts(props) {
+  console.log(props.array)
   return (
     <div className={giftsStyles.results}>
       <div className={giftsStyles.gifts}>
@@ -21,7 +22,6 @@ export default function Gifts(props) {
             <Trending
               trending={props.trending}
               button={props.buttonHeader}
-              children
             />
           </>
         ) : props.array !== [] && props.searchButton === true ? (

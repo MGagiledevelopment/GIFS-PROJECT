@@ -19,13 +19,17 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      data(searchButton, setSearchButton, setArrayGif, inputText, option);
+      data(searchButton, setArrayGif, inputText,setInputText, option,setSearchButton);
     }, 2000);
   }, [searchButton, option]);
 
   useEffect(() => {
     automaticData(inputText, setAutocomplete);
   }, [inputText]);
+
+//   useEffect(() => {
+// setOption([])
+//   }, [arrayGif]);
 
   useEffect(() => {
     trending(setTop);
@@ -43,6 +47,8 @@ function App() {
         autocomplete={autocomplete}
         setSend={setSend}
         setOption={setOption}
+        option={option}
+        setArray={setArrayGif}
       />
       <Gifts
         inputText={inputText}

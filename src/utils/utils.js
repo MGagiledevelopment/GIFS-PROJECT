@@ -1,17 +1,23 @@
-export function data(button, setterButton, setterArray, input, option) {
+export function data(button, setterArray, input,setterInput, option,setSearch) {
   const key = "4lLsekJPTOO0S7IYawubPut9TBZW9Ka9";
   if (button) {
     const petition = fetch(
       `https://api.giphy.com/v1/gifs/search?api_key=${key}&q=${input}&limit=15&offset=0&rating=g&lang=en`
     );
 
-    petition
+    petition 
       .then((inJSON) => {
         return inJSON.json();
       })
       .then((data) => {
+
+        
+        setSearch(!button)
         setterArray(data.data);
-        setterArray(option);
+
+        if(option.length>0){
+          setterArray(option)
+        }
       });
   }
 }

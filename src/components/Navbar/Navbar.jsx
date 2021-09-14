@@ -13,6 +13,8 @@ export default function Navbar({
   autocomplete,
   setSend,
   setOption,
+  // option,
+  // setArray
 }) {
   return (
     <div className={navbarStyles.navbar}>
@@ -52,6 +54,7 @@ export default function Navbar({
             setSearchButton={setSearchButton}
             buttonHeader={buttonHeader}
             setOption={setOption}
+            setSend={setSend}
           />
         ) : (
           <></>

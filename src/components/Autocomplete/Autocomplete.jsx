@@ -8,6 +8,7 @@ export default function Autocomplete({
   buttonHeader,
   setSearchButton,
   searchButton,
+  setSend,
 }) {
   const setter = async (text) => {
     const key = "4lLsekJPTOO0S7IYawubPut9TBZW9Ka9";
@@ -17,7 +18,8 @@ export default function Autocomplete({
     const results = await petition.json();
 
     setOption(results.data);
-    setSearchButton(true);
+    setSearchButton(!searchButton);
+    setSend("#");
     setTimeout(() => {
       setInputText("");
     }, 2000);
@@ -33,15 +35,17 @@ export default function Autocomplete({
         return (
           <div className={autocompleteStyles.listItem}>
             <i class="fas fa-search"></i>
-            <li
+            <button
               onClick={() => {
                 setter(data.name);
               }}
               id="prueba"
-              className={autocompleteStyles.list}
+              className={`${buttonHeader ? autocompleteStyles.dark : ""} ${
+                autocompleteStyles.list
+              }`}
             >
               {data.name}
-            </li>
+            </button>
           </div>
         );
       })}
