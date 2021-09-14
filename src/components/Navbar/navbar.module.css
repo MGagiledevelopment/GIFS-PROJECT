@@ -2,7 +2,6 @@
   height: 100%;
   width: 80%;
   padding: 4rem;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,8 +10,6 @@
 .img {
   width: 45rem;
 }
-
-
 .sectionSearch {
   display: flex;
   justify-content: center;
@@ -35,12 +32,12 @@
   color: white;
 }
 
-@media screen and (max-width: 600px){
-  .img{
+@media screen and (max-width: 900px) {
+  .img {
     width: 26rem;
   }
 
-  .mainTitle{
+  .mainTitle {
     font-size: 3rem;
   }
 }

@@ -3,26 +3,21 @@ import autocompleteStyles from "../Autocomplete/autocomplete.module.css";
 
 export default function Autocomplete({
   autocomplete,
-  searchButton,
-  setSearchButton,
+  setOption,
   setInputText,
   buttonHeader,
+  setSearchButton,
+  searchButton,
 }) {
+  const setter = async (text) => {
+    const key = "4lLsekJPTOO0S7IYawubPut9TBZW9Ka9";
+    const petition = await fetch(
+      `https://api.giphy.com/v1/gifs/search?api_key=${key}&q=${text}&limit=15&offset=0&rating=g&lang=en`
+    );
+    const results = await petition.json();
 
-  
-  // const idOption = document.querySelector("autoOption");
-  // console.log(idOption)
-
-  //  const listener = () => {
-  //   addEventListener("click",()=>{
-  //     const idOption = document.getElementById("autoOption").value;
-  //      setInputText(idOption)
-  //   })
-  // }
-
- 
-  const setter = () => {
-    setSearchButton(!searchButton);
+    setOption(results.data);
+    setSearchButton(true);
     setTimeout(() => {
       setInputText("");
     }, 2000);
@@ -34,22 +29,17 @@ export default function Autocomplete({
         autocompleteStyles.mainbox
       }`}
     >
-      {searchButton ? (
-        <div className={autocompleteStyles.ldsring}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      ) : (
-        <></>
-      )}
-
       {autocomplete.map((data) => {
         return (
           <div className={autocompleteStyles.listItem}>
             <i class="fas fa-search"></i>
-            <li onClick={setter} id="prueba" className={autocompleteStyles.list}>
+            <li
+              onClick={() => {
+                setter(data.name);
+              }}
+              id="prueba"
+              className={autocompleteStyles.list}
+            >
               {data.name}
             </li>
           </div>

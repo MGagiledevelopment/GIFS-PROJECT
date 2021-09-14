@@ -1,17 +1,16 @@
-.header{
-    height:10rem;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    padding: 5rem;
-    justify-content: space-between;
-    border:1px solid red;
+.header {
+  height: 10rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  justify-content: space-between;
 }
-.img{
-    width:6.5rem;
+.img {
+  width: 6.5rem;
 }
-@media screen and (max-width: 600px){
-    .img{
-      width: 5.5rem;
-    }
+@media screen and (max-width: 600px) {
+  .img {
+    width: 5.5rem;
   }
+}

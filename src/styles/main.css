@@ -1,38 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* voy establecer esta regla para poder utilizar REM*/
 html {
-    font-size: 62.5%;
-    font-family: 'Roboto';
-  }
-
-
-.App{
-    min-height: 100vh;
-    border:1px solid red;
-    padding-top: 3rem;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  font-size: 62.5%;
+  font-family: "Roboto";
 }
 
-.AppDark{
-    min-height: 100vh;
-    background-color: rgb(56,55,55);
-    padding-top: 3rem;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.App {
+  min-height: 100vh;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.prueba{
-    height: 100%;
+.AppDark {
+  min-height: 100vh;
+  background-color: rgb(56, 55, 55);
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prueba {
+  height: 100%;
 }

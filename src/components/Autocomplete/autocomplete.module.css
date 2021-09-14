@@ -9,10 +9,10 @@
   border-radius: 2rem;
   background-color: white;
 }
-.dark.mainbox{
-  background-color:rgb(56,55,55) ;
-  color:white;
-  border:1px solid white;
+.dark.mainbox {
+  background-color: rgb(56, 55, 55);
+  color: white;
+  border: 1px solid white;
 }
 .list {
   list-style: none;
@@ -21,14 +21,14 @@
   padding: 1.2rem;
   border-radius: 2rem;
 }
-.listItem{
-  display:flex;
+.listItem {
+  display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 2rem;
 }
 
-.listItem :nth-child(1){
+.listItem :nth-child(1) {
   font-size: 1.5rem;
   margin-left: 1rem;
 }
@@ -36,11 +36,11 @@
   background-color: rgba(110, 57, 196, 0.13);
 }
 
-@media screen and (max-width: 800px){
-  .mainbox{
+@media screen and (max-width: 800px) {
+  .mainbox {
     width: 60%;
   }
-  .list{
+  .list {
     font-size: 1.5rem;
   }
 }
@@ -50,7 +50,7 @@
   display: inline-block;
   position: absolute;
   left: 45%;
-  top:30%;
+  top: 30%;
   width: 80px;
   height: 80px;
 }
@@ -64,7 +64,7 @@
   border: 8px solid #fff;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: rgb(87,26,208) transparent transparent transparent;
+  border-color: rgb(87, 26, 208) transparent transparent transparent;
 }
 .ldsring div:nth-child(1) {
   animation-delay: -0.45s;

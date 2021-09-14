@@ -4,7 +4,6 @@ import InputText from "./sub-components/input-text";
 import SearchButton from "./sub-components/search-button";
 import Autocomplete from "../Autocomplete/Autocomplete.jsx";
 
-
 export default function Navbar({
   buttonHeader,
   searchButton,
@@ -12,6 +11,8 @@ export default function Navbar({
   inputText,
   setInputText,
   autocomplete,
+  setSend,
+  setOption,
 }) {
   return (
     <div className={navbarStyles.navbar}>
@@ -28,20 +29,30 @@ export default function Navbar({
         <InputText
           inputText={inputText}
           setInputText={setInputText}
+          setSearchButton={setSearchButton}
           button={buttonHeader}
         />
         <SearchButton
           searchButton={searchButton}
           setSearchButton={setSearchButton}
           setInputText={setInputText}
+          inputText={inputText}
           autocomplete={autocomplete}
+          setSend={setSend}
         />
       </div>
 
       <div>
         {" "}
         {autocomplete.length > 0 ? (
-          <Autocomplete autocomplete={autocomplete} setInputText={setInputText}searchButton={searchButton}setSearchButton={setSearchButton} buttonHeader={buttonHeader}/>
+          <Autocomplete
+            autocomplete={autocomplete}
+            setInputText={setInputText}
+            searchButton={searchButton}
+            setSearchButton={setSearchButton}
+            buttonHeader={buttonHeader}
+            setOption={setOption}
+          />
         ) : (
           <></>
         )}

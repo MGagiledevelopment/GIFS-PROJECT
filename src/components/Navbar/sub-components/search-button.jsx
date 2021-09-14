@@ -2,16 +2,14 @@ import React from "react";
 import inputStyles from "../sub-components/inputs.module.css";
 
 
-export default function SearchButton({searchButton, setSearchButton,setInputText,autocomplete}) {
+export default function SearchButton({searchButton, setSearchButton,setInputText,setSend,inputText}) {
 
   const handleButton = () => {
-
+      setSend(inputText)
       setSearchButton(!searchButton);
       setTimeout(()=>{
         setInputText("")
       }, 2000)
-
-
   };
 
   return (

@@ -1,81 +1,40 @@
 import React from "react";
 import giftsStyles from "../Gifts/gifts.module.css";
-import Notfound from "../Notfound/Notfound";
+import Results from "../Results/Results";
+import Circle from "../Loader/Loader";
+import Trending from "../Trending/Trending";
 
 export default function Gifts(props) {
   return (
-    <div className={giftsStyles.gifts}>
-      {props.array.length > 0 ? (
-        <p
-          className={`${props.buttonHeader ? giftsStyles.dark : " "} ${
-            giftsStyles.title2
-          }`}
-        >
-          Resultado de tu búsqueda
-        </p>
-      ) : (
-        <>
-          <p
-            className={`${props.buttonHeader ? giftsStyles.dark : " "} ${
-              giftsStyles.title
-            }`}
-          >
-            Realizá tu búsqueda
-          </p>
-          <p className={`${props.buttonHeader ? giftsStyles.dark : ""} ${giftsStyles.trendingtitle}`}> TOP TRENDING</p>
-        </>
-      )}
+    <div className={giftsStyles.results}>
+      <div className={giftsStyles.gifts}>
+        {props.array !== [] && props.send === "" ? (
+          <>
+            <p
+              className={`${props.buttonHeader ? giftsStyles.dark : " "} ${
+                giftsStyles.title2
+              }`}
+            >
+              Realizá tu búsqueda
+            </p>
 
-      {props.array.length === 0 ? (
-        <div
-          className={`${props.buttonHeader ? giftsStyles.dark : " "} ${
-            giftsStyles.boxGifts
-          }`}
-        >
-          {props.trending.map((gif) => {
-            return (
-              <a href="https://giphy.com">
-                <img
-                  src={gif.images.fixed_width.url}
-                  className={`${props.buttonHeader ? giftsStyles.dark : ""} ${
-                    giftsStyles.gif
-                  }`}
-                />{" "}
-              </a>
-            );
-          })}
-        </div>
-      ) : (
-        <></>
-      )}
-
-      {props.array.length > 0 ? (
-        <div
-          className={`${props.buttonHeader ? giftsStyles.dark : " "} ${
-            giftsStyles.boxGifts
-          }`}
-        >
-          {props.array.length > 0 ? (
-            props.array.map((gif) => {
-              return (
-                <a href="https://giphy.com">
-                  <img
-                    src={gif.images.fixed_width.url}
-                    className={`${props.buttonHeader ? giftsStyles.dark : ""} ${
-                      giftsStyles.gif
-                    }`}
-                  />{" "}
-                </a>
-              );
-            })
-          ) : (
-            <></>
-          )}
-        </div>
-      ) : (
-        <></>
-      )}
-      {props.autocomplete === 0 ? <Notfound /> : <></>}
+            <Trending
+              trending={props.trending}
+              button={props.buttonHeader}
+              children
+            />
+          </>
+        ) : props.array !== [] && props.searchButton === true ? (
+          Circle()
+        ) : (
+          <Results
+            arrayGifts={props.array}
+            inputText={props.inputText}
+            button={props.searchButton}
+            buttonHeader={props.buttonHeader}
+          />
+        )}
+      </div>
     </div>
   );
 }

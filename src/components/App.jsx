@@ -5,7 +5,7 @@ import Navbar from "./Navbar/Navbar";
 import Gifts from "./Gifts/Gifts";
 import { data } from "../utils/utils";
 import { automaticData } from "../utils/utils";
-import {trending} from "../utils/utils"
+import { trending } from "../utils/utils";
 
 function App() {
   const [buttonHeader, setButtonHeader] = useState(false);
@@ -13,32 +13,23 @@ function App() {
   const [inputText, setInputText] = useState("");
   const [arrayGif, setArrayGif] = useState([]);
   const [autocomplete, setAutocomplete] = useState([]);
-  const [top, setTop] =useState([])
-  // const [notfound, setNotfound] = useState(false)
-
-
-  // console.log(inputText)
-//   useEffect(()=>{
-// if(arrayGif.length === 0){
-//   setNotfound(!notfound)
-// }
-//   },[arrayGif])
-
+  const [top, setTop] = useState([]);
+  const [send, setSend] = useState("");
+  const [option, setOption] = useState([]);
 
   useEffect(() => {
     setTimeout(() => {
-      data(searchButton, setSearchButton, setArrayGif, inputText);
+      data(searchButton, setSearchButton, setArrayGif, inputText, option);
     }, 2000);
-
-  }, [searchButton]);
+  }, [searchButton, option]);
 
   useEffect(() => {
     automaticData(inputText, setAutocomplete);
   }, [inputText]);
 
- useEffect(()=>{trending(setTop)}, [])
- 
-
+  useEffect(() => {
+    trending(setTop);
+  }, []);
 
   return (
     <div className={buttonHeader ? "AppDark" : "App"}>
@@ -50,15 +41,18 @@ function App() {
         inputText={inputText}
         setInputText={setInputText}
         autocomplete={autocomplete}
-        
+        setSend={setSend}
+        setOption={setOption}
       />
       <Gifts
+        inputText={inputText}
         array={arrayGif}
         buttonHeader={buttonHeader}
         setButtonHeader={setButtonHeader}
         autocomplete={autocomplete}
         searchButton={searchButton}
         trending={top}
+        send={send}
       />
     </div>
   );

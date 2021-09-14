@@ -1,7 +1,15 @@
-.gifts {
+.results {
   height: 100%;
   width: 80%;
-  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gifts {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,6 +32,7 @@
 .dark.boxGifts {
   background-color: rgba(33, 33, 33, 0.726);
 }
+
 .gif {
   height: 100%;
   width: 100%;
@@ -62,6 +71,7 @@ a {
 
 .title2 {
   font-size: 2rem;
+  letter-spacing: 0.09rem;
   color: rgb(87, 26, 208);
 }
 
@@ -79,13 +89,12 @@ a {
   }
 }
 
-
-.trendingtitle{
-  color:rgb(87, 26, 208);
+.trendingtitle {
+  color: rgb(87, 26, 208);
   margin-top: 8rem;
   margin-bottom: 1rem;
-  padding:1rem;
-  font-size:2rem;
+  padding: 1rem;
+  font-size: 2rem;
   font-weight: 400;
   border-radius: 1.5rem;
   -webkit-box-shadow: 1px 0px 30px 0px rgba(87, 26, 208, 0.294);
@@ -93,7 +102,7 @@ a {
   box-shadow: 1px 0px 30px 0px rgba(87, 26, 208, 0.438);
 }
 
-.dark.trendingtitle{
+.dark.trendingtitle {
   background-color: white;
   -webkit-box-shadow: 1px 0px 30px 0px rgba(255, 255, 255, 0.418);
   -moz-box-shadow: 1px 0px 30px 0px rgba(255, 255, 255, 0.418);

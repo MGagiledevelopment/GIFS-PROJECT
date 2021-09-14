@@ -1,4 +1,4 @@
-export function data(button, setterButton, setterArray, input) {
+export function data(button, setterButton, setterArray, input, option) {
   const key = "4lLsekJPTOO0S7IYawubPut9TBZW9Ka9";
   if (button) {
     const petition = fetch(
@@ -11,7 +11,7 @@ export function data(button, setterButton, setterArray, input) {
       })
       .then((data) => {
         setterArray(data.data);
-        setterButton(false);
+        setterArray(option);
       });
   }
 }
@@ -19,18 +19,17 @@ export function data(button, setterButton, setterArray, input) {
 export function trending(setter) {
   const key = "4lLsekJPTOO0S7IYawubPut9TBZW9Ka9";
 
-  const petition2 = fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${key}&limit=15&rating=g`);
+  const petition2 = fetch(
+    `https://api.giphy.com/v1/gifs/trending?api_key=${key}&limit=15&rating=g`
+  );
   petition2
     .then((inJSON) => {
       return inJSON.json();
-      
     })
     .then((data) => {
       setter(data.data);
     });
 }
-
-
 
 export function automaticData(text, setter) {
   const key = "4lLsekJPTOO0S7IYawubPut9TBZW9Ka9";
