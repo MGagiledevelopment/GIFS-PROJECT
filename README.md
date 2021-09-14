@@ -1,5 +1,6 @@
 # GIFS  PROJECT🛠
- Tercer entregable para Acámica, proyecto que forma parte de la carrera de desarrollo web FrontEnd.
+
+Este es el proyecto que le dió cierre al tercer Sprint de trabajo en Acámica, para la carrera de Desarrollo Web Front-End.
 
 # PREVIEW 👀
 
