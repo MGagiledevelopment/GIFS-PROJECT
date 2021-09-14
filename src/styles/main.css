@@ -34,3 +34,10 @@ html {
 .prueba {
   height: 100%;
 }
+
+@media screen and (max-width: 395px) {
+  .App{
+    padding:0rem;
+  }
+  .AppDark{padding:0rem}
+}

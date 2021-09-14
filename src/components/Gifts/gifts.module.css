@@ -89,6 +89,12 @@ a {
   }
 }
 
+@media screen and (max-width: 395px) {
+  .results{
+    padding:0rem;
+    width:100%
+  }
+}
 .trendingtitle {
   color: rgb(87, 26, 208);
   margin-top: 8rem;

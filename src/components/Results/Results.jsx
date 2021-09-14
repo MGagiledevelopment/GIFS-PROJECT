@@ -14,7 +14,7 @@ export default function Results(props) {
         props.arrayGifts.map((gif) => {
           return (
             <>
-              <a href="https://giphy.com">
+              <a href="https://giphy.com" target="_blank">
                 <img
                   src={gif.images.fixed_width.url}
                   className={`${props.buttonHeader ? giftsStyles.dark : ""} ${
