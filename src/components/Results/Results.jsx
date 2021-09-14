@@ -3,7 +3,6 @@ import Notfound from "../Notfound/Notfound";
 import giftsStyles from "../Gifts/gifts.module.css";
 
 export default function Results(props) {
-  console.log(props.arrayGifts.length)
   return (
     <div
       className={`${props.buttonHeader ? giftsStyles.dark : " "} ${

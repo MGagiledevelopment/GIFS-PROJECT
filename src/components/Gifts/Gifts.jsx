@@ -26,14 +26,17 @@ export default function Gifts(props) {
           </>
         ) : props.array !== [] && props.searchButton === true ? (
           Circle()
-        ) : (
+        ) : (<>
+        <p className={`${props.buttonHeader ? giftsStyles.dark : " "} ${
+                giftsStyles.title2
+              }`}>Resultado de tu búsqueda: </p>
           <Results
             arrayGifts={props.array}
             inputText={props.inputText}
             button={props.searchButton}
             buttonHeader={props.buttonHeader}
           />
-        )}
+        </>)}
       </div>
     </div>
   );
