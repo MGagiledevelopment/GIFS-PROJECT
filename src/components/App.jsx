@@ -27,9 +27,9 @@ function App() {
     automaticData(inputText, setAutocomplete);
   }, [inputText]);
 
-//   useEffect(() => {
-// setOption([])
-//   }, [arrayGif]);
+  useEffect(() => {
+setOption([])
+  }, [arrayGif]);
 
   useEffect(() => {
     trending(setTop);
