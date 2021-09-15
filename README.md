@@ -20,7 +20,7 @@ Además, la aplicacion puede mutar de un "modo diurno" a un "modo nocturno" medi
 
 # CONCLUSIONES🤔
 
-Para la próxima, voy a dejar un poco de lado la tecnica de PROP DRILLING, y desarrollar como parte de una mejor arquitectura: los CONTEXTOS ("UseContext"), que hacen que el manejo de estados sea mas intuitivo.
+Para la próxima, voy a dejar un poco de lado la tecnica de PROP DRILLING, y desarrollar como parte de una mejor arquitectura: los CONTEXTOS ("UseContext"), que hacen que el manejo de estados sea mas ágil.
 
 
 
