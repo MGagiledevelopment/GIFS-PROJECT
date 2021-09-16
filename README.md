@@ -15,8 +15,8 @@ https://gif-proyect.netlify.app
 
 # OBJETIVO 🏅
 
- El desafío del proyecto se basó en la creación de una aplicación web que ofrezca una búsqueda de GIFs, utilizando asincronisco en Javascript. Utilicé hooks como "UseState" para el manejo de estados y tambien "UseEffect" para el manejo de las peticiones a la API de Giphy.
-Además, la aplicacion puede mutar de un "modo diurno" a un "modo nocturno" mediante el uso de templates literals, que permiten intruducir lógica para el CSS.
+ El desafío del proyecto se basó en la creación de una aplicación web que ofrezca la búsqueda de GIFs, utilizando asincronismo en Javascript (para el manejo del codigo asíncrono utilicé ASYNC/AWAIT). Hice uso de hooks como "UseState" para el manejo de estados, y "UseEffect" para el control del ciclo de vida de los componentes. 
+ Además, la aplicación puede mutar de un "modo diurno" a un "modo nocturno", mediante el uso de templates literals que permiten intruducir lógica para el CSS.
 
 # CONCLUSIONES🤔
 
