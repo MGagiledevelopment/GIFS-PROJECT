@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      data(searchButton, setArrayGif, inputText,setInputText, option,setSearchButton);
+      data(searchButton, setArrayGif, inputText, option,setSearchButton);
     }, 2000);
   }, [searchButton, option]);
 

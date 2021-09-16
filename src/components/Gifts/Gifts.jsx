@@ -6,7 +6,7 @@ import Trending from "../Trending/Trending";
 import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Gifts(props) {
-  let [color, setColor] = useState(`#8154DB`);
+  let [color] = useState(`#8154DB`);
 
   return (
     <div className={giftsStyles.results}>

@@ -15,7 +15,7 @@ export default function SearchButton({searchButton, setSearchButton,setInputText
   return (
     <>
       <button onClick={handleButton} className={inputStyles.search}>
-        <img src="./images/icon-search.svg" />
+        <img src="./images/icon-search.svg" alt="search-icon"/>
       </button>
     </>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import notfoundStyles from "../Notfound/notfound.module.css";
 
 export default function Notfound() {

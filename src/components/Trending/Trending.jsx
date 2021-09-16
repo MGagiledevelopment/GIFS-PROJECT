@@ -10,13 +10,13 @@ export default function Trending(props) {
     >
       {props.trending.map((gif) => {
         return (
-          <a href="https://giphy.com" target="_blank">
+          <a href="https://giphy.com" target="_blank" rel="noreferrer" key={gif.id}>
             <img
-              key={gif.id}
               src={gif.images.fixed_width.url}
               className={`${props.button ? giftsStyles.dark : ""} ${
                 giftsStyles.gif
               }`}
+              alt={gif}
             />{" "}
           </a>
         );

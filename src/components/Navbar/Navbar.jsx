@@ -26,7 +26,7 @@ export default function Navbar({
         ¡Inspirate y buscá los mejores <span>GIFS</span>!
       </h1>
 
-      <img src="./images/navbar.svg" className={navbarStyles.img} />
+      <img src="./images/navbar.svg" className={navbarStyles.img} alt="cover" />
       <div className={navbarStyles.sectionSearch}>
         <InputText
           inputText={inputText}
