@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import giftsStyles from "../Gifts/gifts.module.css";
 import Results from "../Results/Results";
-import Circle from "../Loader/Loader";
 import Trending from "../Trending/Trending";
 import ClipLoader from "react-spinners/ClipLoader";
+import HashLoader from "react-spinners/HashLoader";
+
 
 export default function Gifts(props) {
   let [color] = useState(`#8154DB`);
@@ -26,7 +27,7 @@ export default function Gifts(props) {
             <Trending trending={props.trending} button={props.buttonHeader} />
           </>
         ) : props.array !== [] && props.searchButton === true ? (
-          Circle()
+        <HashLoader color={color}/>
         ) : (
           <>
             <p
