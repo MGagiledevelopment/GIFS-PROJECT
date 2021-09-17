@@ -1,35 +1,35 @@
-.buttonHeader{
-    width:15rem;
-    height: 5rem;
-    color:rgb(95,20,216);
-    border-radius: 5rem;
-    border-color: rgb(95,20,216);
-    background-color:white ;
-    font-weight: 800;
-    letter-spacing: 0.2rem;
-    font-size: 1.2rem;
+.buttonHeader {
+  width: 15rem;
+  height: 5rem;
+  color: rgb(95, 20, 216);
+  border-radius: 5rem;
+  border-color: rgb(95, 20, 216);
+  background-color: white;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
 }
-.buttonHeader:hover{
-font-size: 1.3rem;
-background-color:rgb(80,227,194);
-}
-
-.dark.buttonHeader{
-    width:15rem;
-    height: 5rem;
-    color:white;
-    border-radius: 5rem;
-    border-color: white;
-    background-color:transparent;
+.buttonHeader:hover {
+  font-size: 1.3rem;
+  background-color: rgb(80, 227, 194);
 }
 
-@media screen and (max-width: 600px){
-    .buttonHeader{
-      width: 11rem;
-      font-size: 1rem;
-      margin-left: 1.4rem;
-    }
-    .dark.buttonHeader{
-      width:11rem;
-    }
+.dark.buttonHeader {
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  border-radius: 5rem;
+  border-color: white;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .buttonHeader {
+    width: 11rem;
+    font-size: 1rem;
+    margin-left: 1.4rem;
   }
+  .dark.buttonHeader {
+    width: 11rem;
+  }
+}

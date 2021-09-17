@@ -10,7 +10,12 @@ export default function Trending(props) {
     >
       {props.trending.map((gif) => {
         return (
-          <a href="https://giphy.com" target="_blank" rel="noreferrer" key={gif.id}>
+          <a
+            href="https://giphy.com"
+            target="_blank"
+            rel="noreferrer"
+            key={gif.id}
+          >
             <img
               src={gif.images.fixed_width.url}
               className={`${props.button ? giftsStyles.dark : ""} ${

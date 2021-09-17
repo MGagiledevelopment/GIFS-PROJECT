@@ -90,9 +90,9 @@ a {
 }
 
 @media screen and (max-width: 395px) {
-  .results{
-    padding:0rem;
-    width:100%
+  .results {
+    padding: 0rem;
+    width: 100%;
   }
 }
 .trendingtitle {
@@ -114,10 +114,6 @@ a {
   -moz-box-shadow: 1px 0px 30px 0px rgba(255, 255, 255, 0.418);
   box-shadow: 1px 0px 30px 0px rgba(255, 255, 255, 0.418);
 }
-
-
-
-
 
 .loaderhidden {
   display: none;

@@ -20,12 +20,12 @@
   font-size: 2rem;
   padding: 1.5rem;
   border-radius: 2rem;
-  color:rgb(95, 20, 216);
+  color: rgb(95, 20, 216);
   font-weight: 800;
 }
 
-.dark.list{
-  color:white;
+.dark.list {
+  color: white;
 }
 
 .listItem {
@@ -38,8 +38,7 @@
 .listItem :nth-child(1) {
   font-size: 1.5rem;
   margin-left: 1rem;
-  color:rgb(95, 20, 216);
-  
+  color: rgb(95, 20, 216);
 }
 .listItem :nth-child(2) {
   border: none;
@@ -59,8 +58,8 @@
   }
 }
 @media screen and (max-width: 395px) {
-  .mainbox{
-    width:70%
+  .mainbox {
+    width: 70%;
   }
 }
 /* spinner */

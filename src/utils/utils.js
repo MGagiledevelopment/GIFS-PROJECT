@@ -35,4 +35,3 @@ export async function automaticData(text, setter) {
   const inJSON = await petition3.json();
   setter(inJSON.data);
 }
-

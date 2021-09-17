@@ -2,10 +2,8 @@ import React from "react";
 import inputStyles from "../sub-components/inputs.module.css";
 
 export default function InputText(props) {
-
   const setterClick = () => {
     props.setInputText("");
-    
   };
 
   const setterText = (e) => {
