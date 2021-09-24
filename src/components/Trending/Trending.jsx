@@ -11,7 +11,7 @@ export default function Trending(props) {
       {props.trending.map((gif) => {
         return (
           <a
-            href="https://giphy.com"
+            href={gif.url}
             target="_blank"
             rel="noreferrer"
             key={gif.id}

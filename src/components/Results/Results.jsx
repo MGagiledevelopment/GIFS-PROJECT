@@ -13,7 +13,7 @@ export default function Results(props) {
         props.arrayGifts.map((gif) => {
           return (
             <a
-              href="https://giphy.com"
+              href={gif.url}
               target="_blank"
               rel="noreferrer"
               key={gif.id}
