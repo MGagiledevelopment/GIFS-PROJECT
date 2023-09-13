@@ -1,6 +1,5 @@
 # GIFS  PROJECT🛠
 
-Este es el proyecto que le dió cierre al tercer Sprint de trabajo en Acámica, para la carrera de Desarrollo Web Front-End.
 
 # PREVIEW 👀
 
