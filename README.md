@@ -1,7 +1,7 @@
 # GIFS  PROJECT🛠
 
 
-# PREVIEW 👀
+# VISTA PREVIA 👀
 
 ![gif-proyect](https://user-images.githubusercontent.com/83677143/133338833-e3148361-3259-42a2-a31c-929134ae5f93.gif)
 
