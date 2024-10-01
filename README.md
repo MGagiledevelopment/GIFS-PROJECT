@@ -11,4 +11,4 @@ https://gif-proyect.netlify.app
 # OBJECTIVE 🏅
 
 The challenge of the project was based on the creation of a web application that offers the search for GIFs, using asynchronous Javascript (for the management of the asynchronous code I used ASYNC/AWAIT). I made use of hooks like "UseState" for state management, and "UseEffect" for component lifecycle control.
-In addition, the application can be switched from "day mode" to "night mode" by using template literals that allow you to input logic for the CSS.
+In addition, the application can be switched from "day mode" to "night mode" by using "template literals" that allow you to input logic for the CSS.
